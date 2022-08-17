@@ -1,0 +1,17 @@
+goog.provide('chat.frontend.view');
+chat.frontend.view.message_html = (function chat$frontend$view$message_html(messages){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__12041_SHARP_){
+return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309)], null),p1__12041_SHARP_);
+}),messages);
+});
+chat.frontend.view.message_box = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.p-4.w-full.h-full.relative.flex.flex-row","div.p-4.w-full.h-full.relative.flex.flex-row",-929551404),chat.frontend.view.message_html(cljs.core.deref(re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"messages","messages",345434482)], null))))], null);
+chat.frontend.view.chat_box = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.m-4.p-4.absolute.z-10.shadow-xl.border-2.rounded-lg.flex.flex-col.items-center.gap-3","div.m-4.p-4.absolute.z-10.shadow-xl.border-2.rounded-lg.flex.flex-col.items-center.gap-3",-467291399),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"h-1/4 w-3/4"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.flex.flex-row.justify-between.w-full","div.flex.flex-row.justify-between.w-full",1036490182),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1.flex-none.font-semibold.text-lg","h1.flex-none.font-semibold.text-lg",-1955838823),"Message"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.flex-none.rounded-full.bg-green-600.text-green-100.px-4","button.flex-none.rounded-full.bg-green-600.text-green-100.px-4",-1736247733),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"send-message","send-message",185030731)], null));
+})], null),"Send"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"textarea.flex-grow.h-full.w-full","textarea.flex-grow.h-full.w-full",874689837),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__12042_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"update-chat-field","update-chat-field",726987271),p1__12042_SHARP_.target.value], null));
+})], null)], null)], null);
+chat.frontend.view.chat_view = (function chat$frontend$view$chat_view(){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.flex.items-end.justify-around.w-full.h-full","div.flex.items-end.justify-around.w-full.h-full",1951278680),chat.frontend.view.message_box,chat.frontend.view.chat_box], null);
+});
+
+//# sourceMappingURL=chat.frontend.view.js.map
